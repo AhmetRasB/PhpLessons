@@ -18,10 +18,11 @@
             return $Deger * $Deger;
         }
         echo "<p>" . "The square of $Deger is " . square();
-    }else
-    {
+    }
+    else{
         echo "<br>". "Please enter a number";
     }
+    echo "<h1>---------------------------------------</h1>"
     ?>
 </form>
 </body>
