@@ -23,6 +23,7 @@
         echo "<br>". "Please enter a number";
     }
     echo "<h1>---------------------------------------</h1>"
+
     ?>
 </form>
 </body>
