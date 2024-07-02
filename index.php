@@ -17,7 +17,6 @@
 <?php
 
 
-
     if($_SERVER["REQUEST_METHOD"] == "POST" and isset($_POST['Unit']) and isset($_POST['Amount']) and is_numeric($_POST['Amount']) and is_string($_POST['Unit'])){
         $Unit = $_POST['Unit'];
         $Amount = $_POST['Amount'];
