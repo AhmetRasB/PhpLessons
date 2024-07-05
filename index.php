@@ -32,6 +32,7 @@
             }
             return Calculate($Amount,$ExchangeRate);
         }
+        
         function Calculate($Amount,$ExchangeRate){
             $Conclusion = $Amount*$ExchangeRate;
 
@@ -41,7 +42,7 @@
     }else{
         echo "Please enter unit and amount correctly ";
     }
-
+    
 
 
 ?>
