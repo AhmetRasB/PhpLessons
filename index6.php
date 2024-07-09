@@ -1,37 +1,28 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çerçeveli Form</title>
-    <?php
-        echo(mt_rand(10,20));
-    ?>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-
-
-
-
-    <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['form'] == 'form1') {
-        $gelen = $_POST['test'];
-
-        // Değerin float olup olmadığını kontrol et
-        if (is_numeric($gelen)) {
-            $gelenFloat = (float)$gelen;
-            echo floor($gelenFloat);
-        } else {
-            echo "Lütfen geçerli bir sayı giriniz.";
+<form action="index6.php" method="post">
+    Name : <input type="text" name="name">
+    E-mail : <input type="email" name="email">
+    Your Age : <select name="age">
+        <?php
+        $startage = 30;
+        $lastage = 40;
+        for ($i = $startage; $i <= $lastage; $i++) {
+            echo "<option value='$i'>$i</option>";
         }
+        ?>
+    </select>
+    <input type="submit"> <br>
 
-    }
-    ?>
-
-
-    <?php
-
-    ?>
+</form>
 
 </body>
 </html>
