@@ -8,9 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-<form action="index6.php" method="post">
-    Name : <input type="text" name="name">
-    E-mail : <input type="email" name="email">
+<form action="index7.php" method="get">
+    Name : <input type="text" name="name"> <br>
+    E-mail : <input type="email" name="email"> <br>
+    Cinsiyetiniz : <input type="radio" name="Cinsiyet" value="Erkek"> Erkek <input type="radio" name="Cinsiyet" value="Kadın"> Kadın
+    <br>
     Your Age : <select name="age">
         <?php
         $startage = 30;
@@ -18,8 +20,9 @@
         for ($i = $startage; $i <= $lastage; $i++) {
             echo "<option value='$i'>$i</option>";
         }
+        
         ?>
-    </select>
+    </select> <br>
     <input type="submit"> <br>
 
 </form>
