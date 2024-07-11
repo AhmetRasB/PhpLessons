@@ -9,12 +9,21 @@
 </head>
 <body>
 <?php
+
     $GelenDosya = $_FILES["dosya"];
-    echo "<pre>";
-    foreach ($GelenDosya as $value) {
-        echo $value . "<br>";
+    $GelenDosyaYolu = $_FILES["dosya"]["tmp_name"];
+    $GelenDosyaAdi = $_FILES["dosya"]["name"];
+    $Yol = "Pictures/";
+    $GelenDosyaYoluveAdi = $Yol.$GelenDosyaAdi;
+    if(move_uploaded_file($GelenDosyaYolu, $GelenDosyaYoluveAdi)) {
+        echo "Resim başarıyla yüklendi" . "<br>";
+        echo "Resmin adı : " . $GelenDosyaAdi . "<br>";
+        echo "Dosya yolu: " . $GelenDosyaYolu . "<br>";
+        echo "<img src='$GelenDosyaYoluveAdi'> <br>'>";
+
     }
-    echo "</pre>";
 ?>
+
+<img src=""alt="">
 </body>
 </html>
