@@ -34,7 +34,7 @@
             text-align: left; /* Placeholder'ı sola hizalar */
             font-size: 20px;
             display: flex;
-            align-items: center; /*
+            align-items: center; 
 
         }
     </style>
