@@ -11,7 +11,7 @@
   </style>
   <body>
      <div class="form1">
-       <form  action="Sonuc.php?>" method="post">
+       <form name="test1" action="Sonuc.php?>" method="post">
          Adınızı Giriniz: <input type="text" name="ad"> <br>
          Soyadınızı Giriniz: <input type="text" name="soyad"> <br>
          Mail adresiniz: <input type="email" name="mail"> <br>
@@ -21,7 +21,7 @@
      <br>
 
      <div class="form2">
-       <form  action="Sonuc.php?>" method="post">
+       <form  name="test2"  action="Sonuc.php?>" method="post">
          Adınızı Giriniz: <input type="text" name="ad"> <br>
          Soyadınızı Giriniz: <input type="text" name="soyad"> <br>
          Mail adresiniz: <input type="email" name="mail"> <br>
