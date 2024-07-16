@@ -14,7 +14,7 @@
         Mail adresiniz: <input type="email" name="mail"> <br>
         <input type="submit">
 
-    </form>
+    </form">
     <?php
     }else{
         $Gelen = $_GET["ad"];
