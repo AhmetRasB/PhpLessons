@@ -7,7 +7,11 @@
 </head>
 <body>
 	<?php 
-	
+		function ahmet(){
+			echo "hello";
+
+		}
+		ahmet();
 	 ?>
 </body>
 </html>
