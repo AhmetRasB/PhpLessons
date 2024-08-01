@@ -7,11 +7,10 @@
 </head>
 <body>
 	<?php 
-		function ahmet(){
-			echo "hello";
+		//preg_match(pattern, subject) Kendisini parametre olarak verilen düzenli ifadeli değer doğrultusunda içeriği kontrol eder ve aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan içeriğin değerinden yeni bir dizi oluşturarak oluşturduğu dizi değerini geriye döndürür
+		//preg_match_all(pattern, subject, matches)
 
-		}
-		ahmet();
+
 	 ?>
 </body>
 </html>
