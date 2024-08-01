@@ -7,10 +7,12 @@
 </head>
 <body>
 	<?php 
-		//preg_match(pattern, subject) Kendisini parametre olarak verilen düzenli ifadeli değer doğrultusunda içeriği kontrol eder ve aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan içeriğin değerinden yeni bir dizi oluşturarak oluşturduğu dizi değerini geriye döndürür
-		//preg_match_all(pattern, subject, matches)
-
-
+		$text = "Selam ben ahmet nasılsınız iyisiniz umarım, bende iyiyim teşekkür ederim beni arayarak ulaşabilirsiniz adım ahmet unutmayın ahmet";
+		$pattern = array("/ahmet/");
+		$change = array("Hakan");
+		$result = preg_filter($pattern,$change , $text);
+		echo "Original Version : ".  $text . "<br>";
+		echo "Changed Version : ". $result . "<br>";
 	 ?>
 </body>
 </html>
