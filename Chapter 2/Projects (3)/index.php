@@ -5,18 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 </head>
-<body> 
-	<form action="index.php" method="get">
-		Sayıları giriniz arasında virgül olacak şekilde : <input type="text" name="text">
-		<input type="submit" name="" value="Gönder">
-	</form>
- <?php
- 	if(isset($_GET['text'])){
- 		$text = $_GET['text'];
- 	$pattern = "/2/";
- 	$sonuc = preg_filter($pattern, "1", $text);
- 	print_r($sonuc);
- 	}
-  ?>
+<body>
+<?php
+$Metin = "Merhaba ben ahmet bu php kodum.";
+$Pattern = "/P H P/ix";
+preg_match($Pattern, $Metin, $sonuc);
+echo "Original" . $Metin . "<br>";
+echo "<pre>";
+print_r($sonuc);
+echo "<pre/>";
+?>
 </body>
 </html>
