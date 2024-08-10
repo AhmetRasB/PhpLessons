@@ -9,7 +9,7 @@
 <?php 
 	$Gelenler = $_GET;
 	foreach ($Gelenler as $gelen => $value) {
-		echo $value $gelen . "<br>";
+		echo $value. $Gelenler . "<br>";
 	}
 
  ?>
