@@ -1,22 +1,23 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
-<body> 
-	<form action="index.php" method="get">
-		Sayıları giriniz arasında virgül olacak şekilde : <input type="text" name="text">
-		<input type="submit" name="" value="Gönder">
-	</form>
- <?php
- 	if(isset($_GET['text'])){
- 		$text = $_GET['text'];
- 	$pattern = "/2/";
- 	$sonuc = preg_filter($pattern, "1", $text);
- 	print_r($sonuc);
- 	}
-  ?>
+<body>
+<?php
+    $Icerik = " Ben Ahmet Nasılsınız İyimisiniz";
+    $Pattern = "/^Ahmet/";
+    $Sonuc = preg_match_all($Pattern, $Icerik);
+    if($Sonuc == 1){
+        echo "Mevcuttur";
+    }
+    else{
+        echo "Mevcut Değildir.";
+    }
+?>
 </body>
 </html>

@@ -9,7 +9,16 @@
 </head>
 <body>
 <?php
-
+        $Metin = "Selam ben ahmet, 
+        nasılsınız iyisiniz. 
+        
+        
+        umarım";
+        $Pattern = "/.*/s";
+        preg_match_all($Pattern, $Metin, $Sonuc);
+        echo "<pre>";
+        print_r($Sonuc);
+        echo "</pre>";
 ?>
 </body>
 </html>
